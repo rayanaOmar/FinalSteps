@@ -51,9 +51,7 @@ class PeopleTableViewController: UITableViewController {
         peopleDetails.mass = info.mass
 
         self.navigationController?.pushViewController(peopleDetails, animated: true)
-        print("Selected")
-
-
+      
     }
    
     
