@@ -7,9 +7,17 @@
 
 import UIKit
 
+struct Films{
+    var titleF: String
+    var releaseDate: String
+    var director: String
+    var openingCr: String
+    
+}
+
 class FilmsTableViewController: UITableViewController {
     
-    var filmsArray: [String] = []
+    var filmsArray: [Films] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +37,23 @@ class FilmsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FilmsCell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = filmsArray[indexPath.row]
+        cell.textLabel?.text = filmsArray[indexPath.row].titleF
         
         return cell
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let filmsDetails = storyboard?.instantiateViewController(withIdentifier: "FilmsDetails") as! FilmsDetailsViewController
+        
+        let info = filmsArray[indexPath.row]
+        
+        filmsDetails.titleF = info.titleF
+        filmsDetails.releaseDate = info.releaseDate
+        filmsDetails.director = info.director
+        filmsDetails.openingCr = info.openingCr
+        
+        self.navigationController?.pushViewController(filmsDetails, animated: true)
+        
+    
     }
     //Function Section
     
@@ -43,7 +65,11 @@ class FilmsTableViewController: UITableViewController {
                     if let result = jsonResult["results"] as? NSArray {
                         for object in result {
                             if let jsonObject = object as? NSDictionary{
-                                self.filmsArray.append(jsonObject["title"] as! String)
+                                self.filmsArray.append(Films(
+                                    titleF: jsonObject["title"] as! String,
+                                    releaseDate: jsonObject["release_date"] as! String,
+                                    director: jsonObject["director"] as! String,
+                                    openingCr: jsonObject["opening_crawl"] as! String))
                             }
                         }
                     }

@@ -16,6 +16,8 @@
 		842567712774786B006A112E /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842567702774786B006A112E /* PeopleTableViewController.swift */; };
 		84256773277479E0006A112E /* FilmsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84256772277479E0006A112E /* FilmsTableViewController.swift */; };
 		8425677527747C79006A112E /* StarsWarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425677427747C79006A112E /* StarsWarsModel.swift */; };
+		842567772774B100006A112E /* PeopleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842567762774B100006A112E /* PeopleDetailsViewController.swift */; };
+		842567792774B1E4006A112E /* FilmsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842567782774B1E4006A112E /* FilmsDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		842567702774786B006A112E /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
 		84256772277479E0006A112E /* FilmsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewController.swift; sourceTree = "<group>"; };
 		8425677427747C79006A112E /* StarsWarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsWarsModel.swift; sourceTree = "<group>"; };
+		842567762774B100006A112E /* PeopleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewController.swift; sourceTree = "<group>"; };
+		842567782774B1E4006A112E /* FilmsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				842567702774786B006A112E /* PeopleTableViewController.swift */,
 				84256772277479E0006A112E /* FilmsTableViewController.swift */,
 				8425677427747C79006A112E /* StarsWarsModel.swift */,
+				842567762774B100006A112E /* PeopleDetailsViewController.swift */,
+				842567782774B1E4006A112E /* FilmsDetailsViewController.swift */,
 			);
 			path = IOSmvc;
 			sourceTree = "<group>";
@@ -151,7 +157,9 @@
 				8425675D277476BF006A112E /* AppDelegate.swift in Sources */,
 				8425677527747C79006A112E /* StarsWarsModel.swift in Sources */,
 				842567712774786B006A112E /* PeopleTableViewController.swift in Sources */,
+				842567772774B100006A112E /* PeopleDetailsViewController.swift in Sources */,
 				8425675F277476BF006A112E /* SceneDelegate.swift in Sources */,
+				842567792774B1E4006A112E /* FilmsDetailsViewController.swift in Sources */,
 				84256773277479E0006A112E /* FilmsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
